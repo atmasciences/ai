@@ -194,6 +194,7 @@ export class OpenAIChatLanguageModel implements LanguageModelV1 {
       store: providerMetadata?.openai?.store,
       metadata: providerMetadata?.openai?.metadata,
       prediction: providerMetadata?.openai?.prediction,
+      service_tier: providerMetadata?.openai?.serviceTier,
       reasoning_effort:
         providerMetadata?.openai?.reasoningEffort ??
         this.settings.reasoningEffort,
