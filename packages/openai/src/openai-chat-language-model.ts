@@ -928,7 +928,7 @@ const openaiChatChunkSchema = z.union([
 ]);
 
 function isReasoningModel(modelId: string) {
-  return modelId.startsWith('o');
+  return modelId.startsWith('o') || modelId.includes('reasoning');
 }
 
 function isAudioModel(modelId: string) {
